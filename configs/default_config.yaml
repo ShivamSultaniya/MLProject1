@@ -1,0 +1,219 @@
+# Default Configuration for Multi-Modal Concentration Analysis System
+
+# Global settings
+global:
+  device: auto  # auto, cpu, cuda
+  max_fps: 30.0
+  input_resolution: [640, 480]
+  log_level: INFO
+  
+# Eye Gaze Estimation Module
+gaze:
+  enabled: true
+  model_type: resnet  # resnet, mobilenet, efficientnet
+  model_path: null  # Path to pre-trained model
+  input_size: [224, 224]
+  confidence_threshold: 0.5
+  calibration:
+    enabled: false
+    points: 9
+    screen_size: [1920, 1080]
+
+# Blink Detection Module  
+blink:
+  enabled: true
+  method: hybrid  # ear, cnn, hybrid
+  model_path: null
+  ear_threshold: 0.25
+  blink_frames: 3
+  history_length: 30
+  calibration:
+    enabled: true
+    calibration_frames: 100
+
+# Drowsiness Detection Module
+drowsiness:
+  enabled: true
+  model_path: null
+  sequence_length: 60
+  thresholds:
+    perclos_mild: 0.15
+    perclos_moderate: 0.25
+    perclos_severe: 0.35
+    blink_rate_low: 5
+    blink_rate_high: 25
+    long_closure_duration: 2.0
+    microsleep_duration: 0.5
+
+# Head Pose Estimation Module
+pose:
+  enabled: true
+  model_type: resnet  # resnet, efficientnet, posenet
+  model_path: null
+  input_size: [224, 224]
+  confidence_threshold: 0.5
+  smoothing_window: 5
+  camera_calibration:
+    enabled: false
+    camera_matrix: null
+    dist_coeffs: null
+
+# Engagement Recognition Module
+engagement:
+  enabled: true
+  model_type: cnn  # cnn, transformer, multimodal
+  model_path: null
+  input_size: [224, 224]
+  sequence_length: 16
+  confidence_threshold: 0.6
+  temporal_window: 30
+
+# Integration System
+integration:
+  parallel_processing: true
+  max_workers: 4
+  concentration_weights:
+    gaze: 0.25
+    engagement: 0.30
+    pose: 0.20
+    drowsiness: 0.25
+  
+  alert_thresholds:
+    low_concentration: 0.3
+    moderate_concentration: 0.5
+    high_drowsiness: 2  # drowsiness level
+    looking_away_angle: 30  # degrees
+    head_turned_angle: 45   # degrees
+
+# Feedback System
+feedback:
+  enabled: true
+  modes: [visual, audio]  # visual, audio, haptic
+  visual:
+    overlay_enabled: true
+    color_coding: true
+    progress_bars: true
+  audio:
+    alerts_enabled: true
+    volume: 0.7
+    alert_sounds:
+      low_concentration: "sounds/low_concentration.wav"
+      drowsiness: "sounds/drowsiness_alert.wav"
+      distraction: "sounds/distraction.wav"
+
+# Data Logging
+logging:
+  enabled: true
+  log_directory: "logs"
+  log_format: json  # json, csv
+  log_frequency: 1.0  # seconds
+  fields:
+    - timestamp
+    - concentration_score
+    - attention_level
+    - module_results
+    - alerts
+  rotation:
+    enabled: true
+    max_size: 100MB
+    backup_count: 5
+
+# Datasets Configuration
+datasets:
+  mpiigaze:
+    data_dir: "data/MPIIGaze"
+    person_ids: null  # null for all
+  
+  gazecapture:
+    data_dir: "data/GazeCapture"
+    eye_type: both  # left, right, both
+    device_type: null  # iPhone, iPad, etc.
+    max_samples: null
+  
+  zju_eyeblink:
+    data_dir: "data/ZJU_Eyeblink"
+  
+  nthu_ddd:
+    data_dir: "data/NTHU_DDD"
+  
+  biwi:
+    data_dir: "data/BIWI"
+  
+  daisee:
+    data_dir: "data/DAiSEE"
+    split: train  # train, val, test
+
+# Training Configuration
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 100
+  optimizer: adam  # adam, sgd, adamw
+  scheduler: cosine  # cosine, step, plateau
+  
+  data_augmentation:
+    enabled: true
+    rotation_range: 15
+    brightness_range: 0.2
+    contrast_range: 0.2
+    horizontal_flip: true
+  
+  validation:
+    split_ratio: 0.2
+    frequency: 5  # epochs
+  
+  checkpoints:
+    save_best: true
+    save_frequency: 10  # epochs
+    directory: "checkpoints"
+
+# Evaluation Configuration
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - angular_error  # for pose/gaze
+    - mae  # mean absolute error
+  
+  cross_validation:
+    enabled: false
+    folds: 5
+  
+  benchmark_datasets: true
+  
+  visualization:
+    enabled: true
+    confusion_matrix: true
+    roc_curves: true
+    error_distributions: true
+
+# Hardware Optimization
+optimization:
+  tensorrt:
+    enabled: false
+    precision: fp16  # fp16, int8
+  
+  onnx:
+    enabled: false
+    opset_version: 11
+  
+  quantization:
+    enabled: false
+    method: dynamic  # dynamic, static
+  
+  model_pruning:
+    enabled: false
+    sparsity: 0.5
+
+# Development Settings
+development:
+  debug_mode: false
+  profile_performance: false
+  save_intermediate_results: false
+  visualization:
+    show_landmarks: true
+    show_bounding_boxes: true
+    show_gaze_vectors: true
+    show_pose_axes: true
