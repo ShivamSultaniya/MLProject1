@@ -1,0 +1,25 @@
+2025-09-18 23:38:32,003 - concentration_tracker - INFO - Camera initialized successfully
+2025-09-18 23:38:32,003 - concentration_tracker - INFO - Concentration Tracker initialized successfully
+2025-09-18 23:38:32,004 - concentration_tracker - INFO - Starting concentration tracking...
+2025-09-18 23:38:42,035 - concentration_tracker - INFO - Concentration: 0.65 (Good) - Blink Rate: 5.9/min - Face: Yes
+2025-09-18 23:38:42,035 - concentration_tracker - INFO - Session Stats - Avg: 0.62, Trend: Stable
+2025-09-18 23:38:52,051 - concentration_tracker - INFO - Concentration: 0.70 (Good) - Blink Rate: 3.0/min - Face: Yes
+2025-09-18 23:38:52,051 - concentration_tracker - INFO - Session Stats - Avg: 0.69, Trend: Stable
+2025-09-18 23:39:02,052 - concentration_tracker - INFO - Concentration: 0.00 (Poor) - Blink Rate: 4.0/min - Face: No
+2025-09-18 23:39:02,052 - concentration_tracker - INFO - Session Stats - Avg: 0.36, Trend: Stable
+2025-09-18 23:39:12,082 - concentration_tracker - INFO - Concentration: 0.52 (Good) - Blink Rate: 4.5/min - Face: Yes
+2025-09-18 23:39:12,083 - concentration_tracker - INFO - Session Stats - Avg: 0.52, Trend: Stable
+2025-09-18 23:39:22,114 - concentration_tracker - INFO - Concentration: 0.53 (Good) - Blink Rate: 3.6/min - Face: Yes
+2025-09-18 23:39:22,114 - concentration_tracker - INFO - Session Stats - Avg: 0.53, Trend: Stable
+2025-09-18 23:39:32,133 - concentration_tracker - INFO - Concentration: 0.67 (Good) - Blink Rate: 0.0/min - Face: Yes
+2025-09-18 23:39:32,133 - concentration_tracker - INFO - Session Stats - Avg: 0.57, Trend: Stable
+2025-09-18 23:39:42,158 - concentration_tracker - INFO - Concentration: 0.71 (Excellent) - Blink Rate: 0.0/min - Face: Yes
+2025-09-18 23:39:42,158 - concentration_tracker - INFO - Session Stats - Avg: 0.72, Trend: Stable
+2025-09-18 23:39:52,167 - concentration_tracker - INFO - Concentration: 0.68 (Good) - Blink Rate: 5.9/min - Face: Yes
+2025-09-18 23:39:52,167 - concentration_tracker - INFO - Session Stats - Avg: 0.68, Trend: Stable
+2025-09-18 23:40:02,178 - concentration_tracker - INFO - Concentration: 0.67 (Good) - Blink Rate: 4.0/min - Face: Yes
+2025-09-18 23:40:02,179 - concentration_tracker - INFO - Session Stats - Avg: 0.67, Trend: Stable
+2025-09-18 23:40:04,065 - concentration_tracker - INFO - Tracking interrupted by user
+2025-09-18 23:40:04,128 - concentration_tracker - INFO - Session completed - Duration: 92.1s, Frames: 2690
+2025-09-18 23:40:04,128 - concentration_tracker - INFO - Final Stats - Current: 0.67, Average: 0.67, Trend: Stable
+2025-09-18 23:40:04,128 - concentration_tracker - INFO - Concentration tracking stopped

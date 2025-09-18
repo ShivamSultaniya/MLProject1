@@ -1,0 +1,40 @@
+# Concentration Tracker Configuration
+
+# Camera Settings
+camera:
+  device_id: 0
+  width: 640
+  height: 480
+  fps: 30
+
+# Face Detection Settings
+face_detection:
+  confidence_threshold: 0.7
+  detection_model: "mediapipe"  # Options: "mediapipe", "opencv", "dlib"
+
+# Eye Tracking Settings
+eye_tracking:
+  blink_threshold: 0.25
+  drowsiness_threshold: 0.3
+  eye_aspect_ratio_threshold: 0.25
+
+# Concentration Scoring
+concentration:
+  time_window: 30  # seconds
+  alert_threshold: 0.4
+  good_concentration_threshold: 0.7
+
+# Logging Settings
+logging:
+  level: "INFO"  # Options: "DEBUG", "INFO", "WARNING", "ERROR"
+  log_file: "data/concentration_log.txt"
+  save_frames: false
+  frame_save_path: "data/frames/"
+
+# Display Settings
+display:
+  show_video: true
+  show_landmarks: true
+  show_concentration_score: true
+  window_name: "Concentration Tracker"
+
