@@ -1,0 +1,416 @@
+2025-09-18 21:09:56,013 - INFO - Initializing concentration analyzer...
+2025-09-18 21:09:56,029 - ERROR - Error loading model: Ran out of input
+2025-09-18 21:09:56,092 - INFO - Gaze estimator initialized
+2025-09-18 21:09:56,092 - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-18 21:09:56,123 - INFO - Blink detector initialized
+2025-09-18 21:09:56,123 - INFO - Drowsiness analyzer initialized
+2025-09-18 21:09:56,123 - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-18 21:09:56,154 - INFO - Head pose estimator initialized
+2025-09-18 21:09:56,170 - INFO - Setting up webcam...
+2025-09-18 21:11:54,920 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-18 21:11:54,982 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-18 21:11:54,982 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-18 21:11:55,013 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-18 21:11:55,013 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-18 21:11:55,029 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-18 21:11:55,060 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-18 21:11:55,076 - root - ERROR - Error: Could not open video source
+2025-09-19 03:00:43,810 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:00:43,833 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:00:43,833 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:00:43,845 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:00:43,845 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:00:43,845 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:00:43,854 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:00:45,242 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:00:45,242 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:00:45,814 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:45,879 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:45,946 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:46,413 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:46,486 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:46,583 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:46,783 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:46,847 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:46,980 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:47,046 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:47,113 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:47,181 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:47,246 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:47,313 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:47,378 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:47,446 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:47,712 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:47,780 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:47,845 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:47,912 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:48,181 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:50,978 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,246 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,313 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,380 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,446 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,512 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,579 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,645 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,713 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,778 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,847 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,912 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:51,980 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,046 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,112 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,179 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,245 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,378 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,447 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,510 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,580 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,644 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,712 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,779 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:52,845 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:53,049 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:53,309 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:00:59,978 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:03,720 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758231063.json
+2025-09-19 03:01:03,720 - root - INFO - Session data saved to session_data_1758231063.json
+2025-09-19 03:01:04,040 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:04,122 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758231064.json
+2025-09-19 03:01:04,122 - root - INFO - Session data saved to session_data_1758231064.json
+2025-09-19 03:01:04,307 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:04,504 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:04,705 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:04,791 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758231064.json
+2025-09-19 03:01:04,791 - root - INFO - Session data saved to session_data_1758231064.json
+2025-09-19 03:01:05,377 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:05,535 - root - INFO - Processed 300 frames in 20.3 seconds
+2025-09-19 03:01:05,535 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:01:06,510 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:08,471 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:09,207 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:09,339 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:09,404 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:09,805 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:10,140 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:10,205 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:10,270 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:10,336 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:10,472 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:10,538 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:10,672 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:10,739 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:10,872 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:11,205 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:11,271 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:11,339 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:11,706 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:11,772 - integration.concentration_analyzer - ERROR - Gaze estimation failed: index 2 is out of bounds for dimension 0 with size 2
+2025-09-19 03:01:11,789 - root - INFO - Quit requested by user
+2025-09-19 03:01:11,852 - root - INFO - === Session Summary ===
+2025-09-19 03:01:11,852 - root - INFO - Duration: 28.0 seconds
+2025-09-19 03:01:11,852 - root - INFO - Frames processed: 393
+2025-09-19 03:01:11,852 - root - INFO - Average FPS: 14.0
+2025-09-19 03:01:11,852 - root - INFO - Average concentration: 0.00
+2025-09-19 03:01:11,852 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:01:11,948 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758231071.json
+2025-09-19 03:01:11,948 - root - INFO - Session data auto-saved to session_data_1758231071.json
+2025-09-19 03:04:08,050 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:04:08,072 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:04:08,072 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:04:08,084 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:04:08,084 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:04:08,084 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:04:08,094 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:04:09,496 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:04:09,496 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:04:29,635 - root - INFO - Processed 300 frames in 20.1 seconds
+2025-09-19 03:04:29,635 - root - INFO - Current concentration: 0.97 (high)
+2025-09-19 03:04:49,625 - root - INFO - Processed 600 frames in 40.1 seconds
+2025-09-19 03:04:49,625 - root - INFO - Current concentration: 0.97 (high)
+2025-09-19 03:05:09,731 - root - INFO - Processed 900 frames in 60.2 seconds
+2025-09-19 03:05:09,731 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:05:30,258 - root - INFO - Processed 1200 frames in 80.8 seconds
+2025-09-19 03:05:30,259 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:05:32,851 - root - INFO - Quit requested by user
+2025-09-19 03:05:32,941 - root - INFO - === Session Summary ===
+2025-09-19 03:05:32,941 - root - INFO - Duration: 84.8 seconds
+2025-09-19 03:05:32,941 - root - INFO - Frames processed: 1239
+2025-09-19 03:05:32,941 - root - INFO - Average FPS: 14.6
+2025-09-19 03:05:32,941 - root - INFO - Average concentration: 0.00
+2025-09-19 03:05:32,941 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:05:33,067 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758231332.json
+2025-09-19 03:05:33,067 - root - INFO - Session data auto-saved to session_data_1758231332.json
+2025-09-19 03:07:49,608 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:07:49,631 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:07:49,631 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:07:49,642 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:07:49,643 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:07:49,643 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:07:49,652 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:07:51,039 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:07:51,040 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:08:11,326 - root - INFO - Processed 300 frames in 20.3 seconds
+2025-09-19 03:08:11,326 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:08:31,320 - root - INFO - Processed 600 frames in 40.3 seconds
+2025-09-19 03:08:31,320 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:08:51,409 - root - INFO - Processed 900 frames in 60.4 seconds
+2025-09-19 03:08:51,409 - root - INFO - Current concentration: 0.73 (medium)
+2025-09-19 03:09:01,594 - root - INFO - Quit requested by user
+2025-09-19 03:09:01,662 - root - INFO - === Session Summary ===
+2025-09-19 03:09:01,662 - root - INFO - Duration: 72.0 seconds
+2025-09-19 03:09:01,662 - root - INFO - Frames processed: 1052
+2025-09-19 03:09:01,662 - root - INFO - Average FPS: 14.6
+2025-09-19 03:09:01,662 - root - INFO - Average concentration: 0.00
+2025-09-19 03:09:01,662 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:09:01,815 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758231541.json
+2025-09-19 03:09:01,815 - root - INFO - Session data auto-saved to session_data_1758231541.json
+2025-09-19 03:12:33,170 - root - WARNING - Config file configs/custom_config.yaml not found, using default configuration
+2025-09-19 03:12:33,180 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:12:33,201 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:12:33,201 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:12:33,214 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:12:33,214 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:12:33,214 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:12:33,223 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:12:34,607 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:12:34,607 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:12:50,987 - root - INFO - Quit requested by user
+2025-09-19 03:12:51,051 - root - INFO - === Session Summary ===
+2025-09-19 03:12:51,051 - root - INFO - Duration: 17.8 seconds
+2025-09-19 03:12:51,051 - root - INFO - Frames processed: 241
+2025-09-19 03:12:51,051 - root - INFO - Average FPS: 13.5
+2025-09-19 03:12:51,051 - root - INFO - Average concentration: 0.00
+2025-09-19 03:12:51,051 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:12:51,170 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758231771.json
+2025-09-19 03:12:51,170 - root - INFO - Session data auto-saved to session_data_1758231771.json
+2025-09-19 03:13:11,067 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:13:11,089 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:13:11,089 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:13:11,101 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:13:11,101 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:13:11,101 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:13:11,111 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:13:12,504 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:13:12,504 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:13:32,582 - root - INFO - Processed 300 frames in 20.1 seconds
+2025-09-19 03:13:32,582 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:13:42,173 - root - INFO - Quit requested by user
+2025-09-19 03:13:42,241 - root - INFO - === Session Summary ===
+2025-09-19 03:13:42,241 - root - INFO - Duration: 31.1 seconds
+2025-09-19 03:13:42,241 - root - INFO - Frames processed: 442
+2025-09-19 03:13:42,241 - root - INFO - Average FPS: 14.2
+2025-09-19 03:13:42,241 - root - INFO - Average concentration: 0.00
+2025-09-19 03:13:42,241 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:13:42,422 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758231822.json
+2025-09-19 03:13:42,422 - root - INFO - Session data auto-saved to session_data_1758231822.json
+2025-09-19 03:14:01,459 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:14:01,480 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:14:01,480 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:14:01,492 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:14:01,492 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:14:01,493 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:14:01,502 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:14:02,912 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:14:02,912 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:14:16,817 - root - INFO - Quit requested by user
+2025-09-19 03:14:16,881 - root - INFO - === Session Summary ===
+2025-09-19 03:14:16,881 - root - INFO - Duration: 15.4 seconds
+2025-09-19 03:14:16,881 - root - INFO - Frames processed: 205
+2025-09-19 03:14:16,881 - root - INFO - Average FPS: 13.3
+2025-09-19 03:14:16,881 - root - INFO - Average concentration: 0.00
+2025-09-19 03:14:16,881 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:14:17,008 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758231856.json
+2025-09-19 03:14:17,008 - root - INFO - Session data auto-saved to session_data_1758231856.json
+2025-09-19 03:15:47,880 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:15:47,901 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:15:47,901 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:15:47,913 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:15:47,913 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:15:47,913 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:15:47,922 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:15:49,317 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:15:49,317 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:16:13,607 - root - INFO - Processed 300 frames in 24.3 seconds
+2025-09-19 03:16:13,607 - root - INFO - Current concentration: 0.15 (distracted)
+2025-09-19 03:16:38,484 - root - INFO - Processed 600 frames in 49.2 seconds
+2025-09-19 03:16:38,485 - root - INFO - Current concentration: 0.15 (distracted)
+2025-09-19 03:17:00,023 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232019.json
+2025-09-19 03:17:00,023 - root - INFO - Session data saved to session_data_1758232019.json
+2025-09-19 03:17:01,234 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232021.json
+2025-09-19 03:17:01,234 - root - INFO - Session data saved to session_data_1758232021.json
+2025-09-19 03:17:01,914 - root - INFO - Processed 900 frames in 72.6 seconds
+2025-09-19 03:17:01,914 - root - INFO - Current concentration: 0.15 (distracted)
+2025-09-19 03:17:02,191 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232022.json
+2025-09-19 03:17:02,191 - root - INFO - Session data saved to session_data_1758232022.json
+2025-09-19 03:17:03,220 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232023.json
+2025-09-19 03:17:03,221 - root - INFO - Session data saved to session_data_1758232023.json
+2025-09-19 03:17:04,155 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232023.json
+2025-09-19 03:17:04,155 - root - INFO - Session data saved to session_data_1758232023.json
+2025-09-19 03:17:05,370 - root - INFO - Quit requested by user
+2025-09-19 03:17:05,458 - root - INFO - === Session Summary ===
+2025-09-19 03:17:05,458 - root - INFO - Duration: 77.5 seconds
+2025-09-19 03:17:05,458 - root - INFO - Frames processed: 941
+2025-09-19 03:17:05,458 - root - INFO - Average FPS: 12.1
+2025-09-19 03:17:05,458 - root - INFO - Average concentration: 0.00
+2025-09-19 03:17:05,458 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:17:05,614 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232025.json
+2025-09-19 03:17:05,614 - root - INFO - Session data auto-saved to session_data_1758232025.json
+2025-09-19 03:17:27,750 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:17:27,771 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:17:27,771 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:17:27,783 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:17:27,783 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:17:27,783 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:17:27,793 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:17:29,159 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:17:29,159 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:17:53,029 - root - INFO - Processed 300 frames in 23.9 seconds
+2025-09-19 03:17:53,030 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:18:20,211 - root - INFO - Processed 600 frames in 51.1 seconds
+2025-09-19 03:18:20,211 - root - INFO - Current concentration: 0.15 (distracted)
+2025-09-19 03:18:26,340 - root - INFO - Quit requested by user
+2025-09-19 03:18:26,427 - root - INFO - === Session Summary ===
+2025-09-19 03:18:26,427 - root - INFO - Duration: 58.6 seconds
+2025-09-19 03:18:26,427 - root - INFO - Frames processed: 690
+2025-09-19 03:18:26,427 - root - INFO - Average FPS: 11.8
+2025-09-19 03:18:26,427 - root - INFO - Average concentration: 0.00
+2025-09-19 03:18:26,427 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:18:26,588 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232106.json
+2025-09-19 03:18:26,588 - root - INFO - Session data auto-saved to session_data_1758232106.json
+2025-09-19 03:18:34,089 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:18:34,110 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:18:34,110 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:18:34,123 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:18:34,123 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:18:34,123 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:18:34,132 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:18:35,530 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:18:35,530 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:18:58,776 - root - INFO - Processed 300 frames in 23.2 seconds
+2025-09-19 03:18:58,776 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:19:21,950 - root - INFO - Processed 600 frames in 46.4 seconds
+2025-09-19 03:19:21,950 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:19:27,310 - root - INFO - Quit requested by user
+2025-09-19 03:19:27,393 - root - INFO - === Session Summary ===
+2025-09-19 03:19:27,393 - root - INFO - Duration: 53.3 seconds
+2025-09-19 03:19:27,393 - root - INFO - Frames processed: 677
+2025-09-19 03:19:27,393 - root - INFO - Average FPS: 12.7
+2025-09-19 03:19:27,393 - root - INFO - Average concentration: 0.00
+2025-09-19 03:19:27,393 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:19:27,570 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232167.json
+2025-09-19 03:19:27,571 - root - INFO - Session data auto-saved to session_data_1758232167.json
+2025-09-19 03:21:01,778 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:21:01,799 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:21:01,799 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:21:01,811 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:21:01,811 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:21:01,812 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:21:01,821 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:21:03,199 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:21:03,199 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:21:29,809 - root - INFO - Processed 300 frames in 26.6 seconds
+2025-09-19 03:21:29,809 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:21:47,095 - root - INFO - Quit requested by user
+2025-09-19 03:21:47,174 - root - INFO - === Session Summary ===
+2025-09-19 03:21:47,174 - root - INFO - Duration: 45.4 seconds
+2025-09-19 03:21:47,174 - root - INFO - Frames processed: 480
+2025-09-19 03:21:47,174 - root - INFO - Average FPS: 10.6
+2025-09-19 03:21:47,174 - root - INFO - Average concentration: 0.00
+2025-09-19 03:21:47,174 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:21:47,368 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232307.json
+2025-09-19 03:21:47,368 - root - INFO - Session data auto-saved to session_data_1758232307.json
+2025-09-19 03:22:05,218 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:22:05,239 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:22:05,239 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:22:05,251 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:22:05,251 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:22:05,251 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:22:05,261 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:22:06,675 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:22:06,675 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:22:36,094 - root - INFO - Processed 300 frames in 29.4 seconds
+2025-09-19 03:22:36,095 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:23:02,671 - root - INFO - Processed 600 frames in 56.0 seconds
+2025-09-19 03:23:02,671 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:23:10,831 - root - INFO - Quit requested by user
+2025-09-19 03:23:10,921 - root - INFO - === Session Summary ===
+2025-09-19 03:23:10,921 - root - INFO - Duration: 65.7 seconds
+2025-09-19 03:23:10,921 - root - INFO - Frames processed: 706
+2025-09-19 03:23:10,921 - root - INFO - Average FPS: 10.8
+2025-09-19 03:23:10,921 - root - INFO - Average concentration: 0.00
+2025-09-19 03:23:10,921 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:23:11,073 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232390.json
+2025-09-19 03:23:11,073 - root - INFO - Session data auto-saved to session_data_1758232390.json
+2025-09-19 03:23:18,160 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:23:18,182 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:23:18,183 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:23:18,195 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:23:18,195 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:23:18,195 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:23:18,205 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:23:19,613 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:23:19,614 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:23:46,463 - root - INFO - Processed 300 frames in 26.8 seconds
+2025-09-19 03:23:46,463 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:24:10,783 - root - INFO - Processed 600 frames in 51.2 seconds
+2025-09-19 03:24:10,783 - root - INFO - Current concentration: 0.78 (medium)
+2025-09-19 03:24:32,772 - root - INFO - Processed 900 frames in 73.2 seconds
+2025-09-19 03:24:32,772 - root - INFO - Current concentration: 0.05 (distracted)
+2025-09-19 03:24:52,054 - root - INFO - Quit requested by user
+2025-09-19 03:24:52,146 - root - INFO - === Session Summary ===
+2025-09-19 03:24:52,146 - root - INFO - Duration: 93.9 seconds
+2025-09-19 03:24:52,146 - root - INFO - Frames processed: 1118
+2025-09-19 03:24:52,146 - root - INFO - Average FPS: 11.9
+2025-09-19 03:24:52,146 - root - INFO - Average concentration: 0.00
+2025-09-19 03:24:52,146 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:24:52,209 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232492.json
+2025-09-19 03:24:52,209 - root - INFO - Session data auto-saved to session_data_1758232492.json
+2025-09-19 03:25:09,302 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:25:09,322 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:25:09,322 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:25:09,335 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:25:09,335 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:25:09,335 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:25:09,354 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:25:10,781 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:25:10,781 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:25:34,241 - root - INFO - Processed 300 frames in 23.5 seconds
+2025-09-19 03:25:34,241 - root - INFO - Current concentration: 0.15 (distracted)
+2025-09-19 03:25:55,234 - root - INFO - Processed 600 frames in 44.5 seconds
+2025-09-19 03:25:55,234 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:26:20,087 - root - INFO - Processed 900 frames in 69.3 seconds
+2025-09-19 03:26:20,087 - root - INFO - Current concentration: 0.05 (distracted)
+2025-09-19 03:26:21,449 - root - INFO - Quit requested by user
+2025-09-19 03:26:21,534 - root - INFO - === Session Summary ===
+2025-09-19 03:26:21,534 - root - INFO - Duration: 72.2 seconds
+2025-09-19 03:26:21,535 - root - INFO - Frames processed: 920
+2025-09-19 03:26:21,535 - root - INFO - Average FPS: 12.7
+2025-09-19 03:26:21,535 - root - INFO - Average concentration: 0.00
+2025-09-19 03:26:21,535 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:26:21,605 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232581.json
+2025-09-19 03:26:21,605 - root - INFO - Session data auto-saved to session_data_1758232581.json
+2025-09-19 03:27:46,498 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 03:27:46,519 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 03:27:46,519 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:27:46,531 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 03:27:46,532 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 03:27:46,532 - root - WARNING - dlib not available, using OpenCV cascade classifiers
+2025-09-19 03:27:46,541 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 03:27:47,932 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 03:27:47,932 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 03:28:10,428 - root - INFO - Processed 300 frames in 22.5 seconds
+2025-09-19 03:28:10,428 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:28:33,050 - root - INFO - Processed 600 frames in 45.1 seconds
+2025-09-19 03:28:33,050 - root - INFO - Current concentration: 0.15 (distracted)
+2025-09-19 03:28:55,077 - root - INFO - Processed 900 frames in 67.1 seconds
+2025-09-19 03:28:55,077 - root - INFO - Current concentration: 1.00 (high)
+2025-09-19 03:29:02,499 - root - INFO - Quit requested by user
+2025-09-19 03:29:02,588 - root - INFO - === Session Summary ===
+2025-09-19 03:29:02,588 - root - INFO - Duration: 76.0 seconds
+2025-09-19 03:29:02,588 - root - INFO - Frames processed: 1011
+2025-09-19 03:29:02,588 - root - INFO - Average FPS: 13.3
+2025-09-19 03:29:02,588 - root - INFO - Average concentration: 0.00
+2025-09-19 03:29:02,588 - root - INFO - Concentration range: 0.00 - 0.00
+2025-09-19 03:29:02,777 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232742.json
+2025-09-19 03:29:02,777 - root - INFO - Session data auto-saved to session_data_1758232742.json

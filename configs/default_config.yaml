@@ -1,0 +1,129 @@
+# Default Configuration for Multi-Modal Concentration Analysis System
+
+# Eye Gaze Estimation Configuration
+gaze:
+  model_path: "models/gaze_model.pth"
+  device: "cpu"  # or "cuda" for GPU acceleration
+  method: "gazenet"  # "gazenet", "mpiigaze", "gazecapture"
+  input_size: [60, 36]
+  calibration_points: 9
+
+# Blink Detection Configuration  
+blink:
+  method: "ear"  # "ear", "ml", "hybrid"
+  ear_threshold: 0.25
+  consecutive_frames: 3
+  model_path: null  # Path to ML model if using "ml" or "hybrid"
+
+# Drowsiness Analysis Configuration
+drowsiness:
+  perclos_threshold: 0.25  # EAR threshold for PERCLOS calculation (eyes closed if EAR < 0.25)
+  analysis_window: 60.0   # Analysis window in seconds
+  drowsy_blink_rate_low: 5.0   # Lower bound for normal blink rate
+  drowsy_blink_rate_high: 25.0  # Upper bound for normal blink rate
+  long_closure_threshold: 2.0   # Long eye closure threshold in seconds
+
+# Head Pose Estimation Configuration
+head_pose:
+  method: "pnp"  # "pnp", "dnn", "hybrid"
+  model_path: null  # Path to DNN model if using "dnn" or "hybrid"
+  smoothing_window: 5
+  camera_matrix: null  # Will use default if null
+  dist_coeffs: null    # Will use default if null
+
+# Engagement Recognition Configuration (Future)
+engagement:
+  model_path: "models/engagement_model.pth"
+  device: "cpu"
+  classes: ["high", "medium", "low", "disengaged"]
+
+# Multi-Modal Fusion Configuration
+fusion:
+  method: "weighted_average"  # "weighted_average", "neural_fusion"
+  weights:
+    gaze_focus: 0.3
+    alertness: 0.3
+    head_stability: 0.2
+    engagement: 0.2
+  temporal_smoothing: true
+  smoothing_window: 10
+
+# Concentration Scoring Configuration
+scoring:
+  temporal_smoothing: true
+  smoothing_window: 10
+  confidence_threshold: 0.5
+  alert_thresholds:
+    high: 0.8
+    medium: 0.6
+    low: 0.4
+
+# Display and Output Configuration
+display:
+  show_visualization: true
+  show_fps: true
+  show_individual_scores: true
+  show_recommendations: true
+  save_video: false
+  video_output_path: "output_video.mp4"
+  video_codec: "mp4v"
+
+# Performance Configuration
+performance:
+  max_fps: 30
+  processing_threads: 1
+  gpu_acceleration: false
+  memory_limit_mb: 1024
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  file: "concentration_analysis.log"
+  max_size_mb: 10
+  backup_count: 3
+
+# Dataset Paths (for training/evaluation)
+datasets:
+  mpiigaze:
+    path: "data/MPIIGaze"
+    train_split: "train"
+    val_split: "val"
+    test_split: "test"
+  
+  gazecapture:
+    path: "data/GazeCapture"
+    metadata_file: "metadata.json"
+  
+  zju_eyeblink:
+    path: "data/ZJU_Eyeblink"
+    annotations: "annotations.txt"
+  
+  nthu_ddd:
+    path: "data/NTHU-DDD"
+    drowsiness_labels: "drowsiness_labels.csv"
+  
+  biwi_kinect:
+    path: "data/BIWI_Kinect"
+    pose_annotations: "pose_annotations.txt"
+  
+  daisee:
+    path: "data/DAiSEE"
+    engagement_labels: "engagement_labels.csv"
+
+# Model Paths
+models:
+  gaze_estimation: "models/gaze_model.pth"
+  blink_detection: "models/blink_model.pth"
+  head_pose: "models/head_pose_model.pth"
+  engagement: "models/engagement_model.pth"
+  landmark_detector: "models/shape_predictor_68_face_landmarks.dat"
+
+# Calibration Settings
+calibration:
+  enable_user_calibration: true
+  calibration_points: 9
+  calibration_duration: 30  # seconds
+  auto_recalibrate: false
+  recalibration_interval: 300  # seconds
+
+
