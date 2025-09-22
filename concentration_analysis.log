@@ -414,3 +414,28 @@
 2025-09-19 03:29:02,588 - root - INFO - Concentration range: 0.00 - 0.00
 2025-09-19 03:29:02,777 - integration.concentration_analyzer - INFO - Session data exported to session_data_1758232742.json
 2025-09-19 03:29:02,777 - root - INFO - Session data auto-saved to session_data_1758232742.json
+2025-09-19 10:00:25,192 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-19 10:00:25,219 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-19 10:00:25,813 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-19 10:00:25,813 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-19 10:00:26,368 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-19 10:00:27,795 - root - INFO - Starting real-time concentration analysis...
+2025-09-19 10:00:27,795 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-19 10:01:17,612 - root - INFO - Processed 300 frames in 49.8 seconds
+2025-09-19 10:01:17,612 - root - INFO - Current concentration: 0.15 (distracted)
+2025-09-22 10:29:06,884 - root - WARNING - Config file configs/custom_config.yaml not found, using default configuration
+2025-09-22 10:29:06,904 - modules.eye_gaze.gaze_estimator - ERROR - Error loading model: Ran out of input
+2025-09-22 10:29:06,931 - integration.concentration_analyzer - INFO - Gaze estimator initialized
+2025-09-22 10:29:07,521 - integration.concentration_analyzer - INFO - Blink detector initialized
+2025-09-22 10:29:07,521 - integration.concentration_analyzer - INFO - Drowsiness analyzer initialized
+2025-09-22 10:29:08,042 - integration.concentration_analyzer - INFO - Head pose estimator initialized
+2025-09-22 10:29:09,511 - root - INFO - Starting real-time concentration analysis...
+2025-09-22 10:29:09,511 - root - INFO - Press 'q' to quit, 's' to save current session data
+2025-09-22 10:29:59,786 - root - INFO - Processed 300 frames in 50.3 seconds
+2025-09-22 10:29:59,787 - root - INFO - Current concentration: 0.64 (medium)
+2025-09-22 10:30:43,570 - root - INFO - Processed 600 frames in 94.1 seconds
+2025-09-22 10:30:43,574 - root - INFO - Current concentration: 0.15 (distracted)
+2025-09-22 10:31:32,410 - root - INFO - Processed 900 frames in 142.9 seconds
+2025-09-22 10:31:32,410 - root - INFO - Current concentration: 0.40 (low)
+2025-09-22 10:32:27,250 - root - INFO - Processed 1200 frames in 197.7 seconds
+2025-09-22 10:32:27,250 - root - INFO - Current concentration: 0.40 (low)
