@@ -90,6 +90,8 @@ class ConcentrationAnalyzer:
         
         # Track eye-closure state across frames for smoothing resets
         self.previous_eyes_closed = False
+        self.eyes_closed_start_time = None
+        self.sustained_closure_threshold = 0.5  # seconds
         
     def _initialize_components(self):
         """Initialize all analysis components."""
@@ -203,7 +205,32 @@ class ConcentrationAnalyzer:
                     results['drowsiness'] = drowsiness_metrics.__dict__
                     # Track current eyes-closed state for stronger penalties
                     eyes_closed_now = bool(self.drowsiness_analyzer.is_eyes_closed)
+                    current_time = time.time()
+                    
+                    # Track sustained closure duration
+                    if eyes_closed_now and not self.previous_eyes_closed:
+                        # Eyes just closed
+                        self.eyes_closed_start_time = current_time
+                    elif not eyes_closed_now and self.previous_eyes_closed:
+                        # Eyes just opened
+                        self.eyes_closed_start_time = None
+                        # Reset smoothing to allow recovery
+                        try:
+                            if hasattr(self.fusion_engine, 'score_history'):
+                                self.fusion_engine.score_history.clear()
+                            if hasattr(self.concentration_scorer, 'score_history'):
+                                self.concentration_scorer.score_history.clear()
+                        except Exception:
+                            pass
+                    
+                    # Determine if this is a sustained closure (not just a blink)
+                    sustained_closure = False
+                    if eyes_closed_now and self.eyes_closed_start_time is not None:
+                        closure_duration = current_time - self.eyes_closed_start_time
+                        sustained_closure = closure_duration >= self.sustained_closure_threshold
+                    
                     results['eyes_closed'] = eyes_closed_now
+                    results['sustained_closure'] = sustained_closure
                     
                     # Mark recent closure window (to avoid instant full recovery)
                     recent_closure = False
@@ -215,15 +242,6 @@ class ConcentrationAnalyzer:
                         recent_closure = False
                     results['recent_closure'] = recent_closure
                     
-                    # If eyes just reopened, reset smoothing to allow recovery
-                    if self.previous_eyes_closed and not eyes_closed_now:
-                        try:
-                            if hasattr(self.fusion_engine, 'score_history'):
-                                self.fusion_engine.score_history.clear()
-                            if hasattr(self.concentration_scorer, 'score_history'):
-                                self.concentration_scorer.score_history.clear()
-                        except Exception:
-                            pass
                     self.previous_eyes_closed = eyes_closed_now
             except Exception as e:
                 self.logger.error(f"Blink detection failed: {e}")
@@ -304,7 +322,10 @@ class ConcentrationAnalyzer:
         
         # Determine eyes-closed signal from drowsiness and/or gaze detector fallback
         eyes_closed = bool(results.get('eyes_closed', False))
+        sustained_closure = bool(results.get('sustained_closure', False))
         recent_closure = bool(results.get('recent_closure', False))
+        
+        # Fallback detection for missing eyes when face is present
         if not eyes_closed:
             gd = results.get('gaze_detection') or {}
             eyes_det = gd.get('eyes_detected', False)
@@ -314,17 +335,18 @@ class ConcentrationAnalyzer:
                 # Maintain a small counter in instance state
                 closed_counter = getattr(self, '_no_eye_counter', 0) + 1
                 self._no_eye_counter = closed_counter
-                if closed_counter >= 5:  # ~5 frames ~ 0.15s at 30fps
-                    eyes_closed = True
+                if closed_counter >= 15:  # ~15 frames ~ 0.5s at 30fps for sustained closure
+                    sustained_closure = True
             else:
                 self._no_eye_counter = 0
 
-        if eyes_closed:
+        # Only penalize for sustained closures, not brief blinks
+        if sustained_closure:
             gaze_focus = 0.0
             alertness = min(alertness, 0.1)
         elif recent_closure:
-            gaze_focus = gaze_focus * 0.4
-            alertness = min(alertness, 0.4)
+            gaze_focus = gaze_focus * 0.7  # Lighter penalty for recent closure
+            alertness = min(alertness, 0.6)
 
         # Increase fatigue penalty if yawn detected via MAR
         if results.get('blink') and results['blink'].get('yawn_detected'):
@@ -341,11 +363,11 @@ class ConcentrationAnalyzer:
         # Compute overall concentration score
         overall_score = self.concentration_scorer.compute_concentration_score(fused_score)
 
-        # Enforce caps only during active or very recent closures
-        if eyes_closed:
+        # Enforce caps only during sustained closures
+        if sustained_closure:
             overall_score = min(overall_score, 0.15)
         elif recent_closure:
-            overall_score = min(overall_score, 0.4)
+            overall_score = min(overall_score, 0.5)
 
         # Determine attention level
         attention_level = self._determine_attention_level(overall_score)
